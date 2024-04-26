@@ -260,11 +260,11 @@ const BLOG = {
   // AI 文章摘要生成 @see https://docs_s.tianli0.top/
   TianliGPT_CSS:
     process.env.NEXT_PUBLIC_TIANLI_GPT_CSS ||
-    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.13/tianli_gpt.css',
+    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css',
   TianliGPT_JS:
     process.env.NEXT_PUBLIC_TIANLI_GPT_JS ||
-    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.13/tianli_gpt.js',
-  TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || 'i5QJ4AiDvKL',
+    'https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js',
+  TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || '5Q5mpqRK5DkwT1X9Gi5e',
 
   // Chatbase 是否显示chatbase机器人 https://www.chatbase.co/
   CHATBASE_ID: process.env.NEXT_PUBLIC_CHATBASE_ID || null,
