@@ -17,12 +17,12 @@ const BLOG = {
     
       CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
     
-      AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Chunyu Hu', // 您的昵称 例如 tangly1024
-      BIO: process.env.NEXT_PUBLIC_BIO || 'one normal PhD student in USA, with him🍚', // 作者简介
+      AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Chunyu Hu(Hugh)', // 您的昵称 例如 tangly1024
+      BIO: process.env.NEXT_PUBLIC_BIO || 'one normal PhD student in USA /n 一个普通的在美国的博士生', // 作者简介
       LINK: process.env.NEXT_PUBLIC_LINK || 'https://huchunyu.xyz', // 网站地址
       KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
       // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-      CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'life_chunyu_hu@outlook.com', // 邮箱地址 例如mail@tangly1024.com
+      CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'life@huchunyu.xyz', // 邮箱地址 例如mail@tangly1024.com
       CONTACT_WEIBO: process.env.NEXT_PUBLIC_CONTACT_WEIBO || '', // 你的微博个人主页
       CONTACT_TWITTER: process.env.NEXT_PUBLIC_CONTACT_TWITTER || '', // 你的twitter个人主页
       CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || '', // 你的github个人主页 例如 https://github.com/tangly1024
@@ -134,7 +134,7 @@ const BLOG = {
       POST_PREVIEW_LINES: 12, // 预览博客行数
       POST_RECOMMEND_COUNT: 6, // 推荐文章数量
       POSTS_PER_PAGE: 12, // post counts per page
-      POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'notion', // 排序方式 'date'按时间,'notion'由notion控制
+      POSTS_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'date', // 排序方式 'date'按时间,'notion'由notion控制
     
       ALGOLIA_APP_ID: process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || null, // 在这里查看 https://dashboard.algolia.com/account/api-keys/
       ALGOLIA_ADMIN_APP_KEY: process.env.ALGOLIA_ADMIN_APP_KEY || null, // 管理后台的KEY，不要暴露在代码中，在这里查看 https://dashboard.algolia.com/account/api-keys/
@@ -149,7 +149,7 @@ const BLOG = {
     
       //   ********动态特效相关********
       // 鼠标点击烟花特效
-      FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || false, // 开关
+      FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || true, // 开关
       // 烟花色彩，感谢 https://github.com/Vixcity 提交的色彩
       FIREWORKS_COLOR: [
         '255, 20, 97',
@@ -178,7 +178,7 @@ const BLOG = {
       WEB_WHIZ_CHAT_BOT_ID: process.env.NEXT_PUBLIC_WEB_WHIZ_CHAT_BOT_ID || null, // 在后台获取ID
     
       // 悬浮挂件
-      WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // 是否显示宠物挂件
+      WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
       WIDGET_PET_LINK:
             process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
             'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
@@ -234,7 +234,7 @@ const BLOG = {
     
       // utterance
       COMMENT_UTTERRANCES_REPO:
-            process.env.NEXT_PUBLIC_COMMENT_UTTERRANCES_REPO || '', // 你的代码仓库名， 例如我是 'tangly1024/NotionNext'； 更多文档参考 https://utteranc.es/
+            process.env.NEXT_PUBLIC_COMMENT_UTTERRANCES_REPO || 'Chunyu-Hugh/personal-blog-commit', // 你的代码仓库名， 例如我是 'tangly1024/NotionNext'； 更多文档参考 https://utteranc.es/
     
       // giscus @see https://giscus.app/
       COMMENT_GISCUS_REPO: process.env.NEXT_PUBLIC_COMMENT_GISCUS_REPO || '', // 你的Github仓库名 e.g 'tangly1024/NotionNext'
